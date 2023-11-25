@@ -8,7 +8,7 @@ class Solution {
 
         for (char l: s.toCharArray()) {
 
-            if (l == '(' || l == '{' || l == '[') {
+            if (map.containsKey(l)) {
                 st.push(map.get(l));
             } else {
 
